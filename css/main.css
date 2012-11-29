@@ -1,43 +1,57 @@
 /*
 CSS for Oliver website
 */
-
-body {
-font-family: Verdana, Helvetica, Arial, sans-serif;
-background-color: #d4e5db;
-line-height: 125%;
-padding: 15px;
-border: 2px solid gray;
-}
+/* header stuffs*/
 
 h1 {
-font-family: "apple chancery", Arial, Helvetica, sans-serif;
-font-size: x-large;
-background-color: navy;
-color: white;
-padding-top: 2em;
-padding-bottom: .2em;
-padding-left: .4em;
-border-radius: 6px;
-
+	font-family: "apple chancery", Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	background-color: navy;
+	color: white;
+	padding-top: 2em;
+	padding-bottom: .2em;
+	padding-left: .4em;
+	border-radius: 6px;
+	text-shadow: 2px 2px 2px #bac2cd;
 }
 
 h2 {
-font-family: "apple chancery", Arial, Helvetica, sans-serif;
-font-size: x-large;
-color: blue;
-font-weight: normal;
-padding-top: 15px;
+	font-family: "apple chancery", Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	color: blue;
+	font-weight: normal;
+	padding-top: 15px;
 }
 
-ul li {
-font-size: small;
-display: inline;
+#tagline p {
+	font-style: italic;
+	font-family: "apple chancery",Georgia, Times, serif;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	padding-left: .8em;
+	border: 1px dashed gray;
+	color: #fb9a00;
+}
+
+/* body things*/
+
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	line-height: 125%;
+	padding: 15px;
+	border: 2px solid gray;
+	background-image: url("../images/bg_copy.png");
+	background-color: #2e75cf;
+	background-repeat: repeat-x;
+}
+
+#front {
+-moz-column-count: 3;
 }
 
 p {
-font-size: small;
-color: navy;
+	font-size: small;
+	color: #031234;
 }
 
 /* em {
@@ -45,48 +59,138 @@ font-style: normal;
 text-transform: uppercase;
 } */
 
-#tagline p {
-font-style: italic;
-font-family: "apple chancery",Georgia, Times, serif;
-padding-top: .2em;
-padding-bottom: .2em;
-padding-left: .8em;
-border: 1px dashed gray;
-
+.feature {
+	float: right;
 }
 
+.aboutimg {
+	float: right;
+}
+
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+.orange {
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+.orange:hover {
+	background: #f47c20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+.orange:active {
+	color: #fcd3a5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+
+/* Lists that aren't links */
 ol {
-font-size: small;
-color: navy;
+	font-size: small;
+	color: #031234;
+	
 }
 
+/* navigation, lists + changes */
+
+#imggallery {
+	display: inline;
+}
+
+ul {
+	width: 300px;
+	margin:0 auto;
+	background: none;
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+.gallery li {
+	list-style: none;
+	width: 100px;
+	min-height: 100px;
+	margin: 0;
+	float: right;
+}
+
+ul li {
+	font-size: small;
+	display: inline;
+	width: 100px;
+	float: left;
+}
+/*
 #mainnavigation {
-font-weight: bold;
-padding-left: .8em;
-
+	font-weight: bold;
+	padding-left: .8em;
 }
 
-#navigation a {
-text-decoration: none;
-}
-
+ul a {
+	text-decoration: none;
+	background: none;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}*/
 a {
-font-weight: bold;
+	font-weight: bold;
+
 }
 
 /* link states */
 a:link {
-color: black;
+	color: navy;
 }
 a:visited {
-color: green;
+	color: black;
 }
 a:hover {
-text-decoration: none;
-color: pink;
-background-color: navy;
+	text-decoration: none;
+	color: pink;
 }
 a:active {
-color: aqua;
-background-color: navy;
+	color: aqua;
+}
+
+/* footer */
+
+footer {
+background: navy;
+height: 50px;
+overflow: hidden;
+opacity: 0.5;
+}
+
+footer p{
+color: white;
+font-size: xx-small;
 }
