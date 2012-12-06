@@ -246,20 +246,25 @@ footer p{
 	}
 
 @media screen and (min-width: 768px)and (max-width:959px) {	
-	#main {padding: 2%; }
+		#main {padding: 2%; }
+		#timeline {padding: 1%; }
+		#main {padding: 2%; }
 }
 
-@media screen and (min-width: 480px)and (max-width:767px) {
-		
+@media screen and (min-width: 480px)and (max-width:767px) {	
 		#main {padding: 2%; }
 		#imgbox {display: none;}
+		#oli1 {display: none}
+		#front {-moz-column-count: 2;}
 
 }
 
 @media screen and (max-width:479px) {
-	#oli1 {display: none}
-	#main {padding: 2%; overflow: hidden; }
-	#imgbox {display: none;
+	#main {padding: 2%; }
+		#imgbox {display: none;}
+		#oli1 {display: none}
+		#front {-moz-column-count: 1;}
+
 	
 }
 
