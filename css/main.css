@@ -24,7 +24,7 @@ h2 {
 	font-size: x-large;
 	color: blue;
 	font-weight: normal;
-	padding-top: 15px;
+	padding-top: .15em;
 }
 
 #tagline p {
@@ -149,13 +149,13 @@ ol {
 /* navigation, lists + changes */
 
 
-
 #imggallery {
 	display: inline;
 }
 
 #implink {
-	width: 26.5625%;
+	width: 31.25%;
+	float: right;
 }
 
 ul {
@@ -253,7 +253,7 @@ footer p{
 
 @media screen and (min-width: 480px)and (max-width:767px) {	
 		#main {padding: 2%; }
-		#imgbox {display: none;}
+		#timeline {padding: 1%; }
 		#oli1 {display: none}
 		#front {-moz-column-count: 2;}
 
@@ -261,11 +261,119 @@ footer p{
 
 @media screen and (max-width:479px) {
 	#main {padding: 2%; }
-		#imgbox {display: none;}
+		#timeline {padding: 1%; }
 		#oli1 {display: none}
 		#front {-moz-column-count: 1;}
 
 	
 }
 
+/*form and table */
 
+#formbox {
+	overflow: hidden;
+	float: right;
+}
+
+form {
+	width: 335px;
+}
+
+#title {
+	width: 330px;
+	height: 26px;
+	color: white;
+	font: bold 11px/18px "Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding-top: 5px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+
+
+.col1 {
+	text-align: right;
+	width: 135px;
+	height: 31px;
+	margin: 0;
+	float: left;
+	margin-right: 2px;
+	
+}
+
+.col2 {
+	width: 195px;
+	height: 31px;
+	display: block;
+	float: left;
+	margin: 0;
+}
+
+.col2comment {
+	width: 195px;
+	height: 98px;
+	margin: 0;
+	display: block;
+	float: left;
+}
+
+.col1comment {
+	text-align: right;
+	width: 135px;
+	height: 98px;
+	float: left;
+	display: block;
+	margin-right: 2px;
+}
+
+div.row {
+	clear: both;
+	width: 335px;
+}
+
+.submit {
+	height: 29px;
+	width: 330px;
+	padding-top: 5px;
+	clear: both;
+} 
+
+.input {
+	background-color: #fff;
+	font: 11px/14px "Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #5A698B;
+	margin: 4px 0 5px 8px;
+	padding: 1px;
+	border: 1px solid #8595B2;
+}
+
+.textarea {
+	border: 1px solid #8595B2;
+	background-color: #fff;
+	font: 11px/14px "Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #5A698B;
+	margin: 4px 0 5px 8px;
+}
+
+
+table {
+	border-collapse: collapse;
+	border: 1px solid black;
+
+}
+
+th {
+	text-align: left;
+	background: gray;
+	color: white;
+	padding: 0.2em;
+}
+
+td {
+	border: 1px solid black;
+	padding: 0.4em;
+	font-size: small;
+	background-color: #8acfff;
+	
+}
